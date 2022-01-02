@@ -12,13 +12,15 @@ move = (x) => {
 
     function measures() {
       bottom += 0.1;
-      size -= 0.040;
+      size -= 0.035;
       if (bottom <= 100) {
         setTimeout(() => {
           measures()
           x.style.bottom = bottom + "%"
-          x.style.fontSize = size + "px"
+          x.style.fontSize = size + "px";
         }, time2);
+      }else{
+        x.style.display = "none"
       }
     }
   }, time);
@@ -26,7 +28,6 @@ move = (x) => {
 
 for (let i = 0; i < spans.length; i++) {
   spans[i].id = i;
-  spans[i].textContent = "Lorem ipsum dolor sit amet consectetur adipisicing eli"
 }
 spans.forEach((e) => {
   move(e);
