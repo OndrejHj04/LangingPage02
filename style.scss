@@ -27,19 +27,4 @@ span{
 
 
 
-// let bottom = 0 
-// let size = 60;
-// measures()
 
-
-//     function measures(){
-//         bottom += 0.1
-//         size -= 0.05
-//         if(bottom<100){
-//             setTimeout(()=>{
-//                 measures()
-//                 spans[0].style.bottom = bottom + "%"
-//                 spans[0].style.fontSize = size + "px"
-//             },20)
-//         }
-//     }

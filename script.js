@@ -25,6 +25,7 @@ move = (x) => {
 
 for (let i = 0; i < spans.length; i++) {
   spans[i].id = i;
+  spans[i].textContent = "Lorem ipsum dolor sit amet consectetur adipisicing eli"
 }
 spans.forEach((e) => {
   move(e);
