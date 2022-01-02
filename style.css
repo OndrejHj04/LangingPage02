@@ -11,6 +11,8 @@ body {
   font-size: 60px;
   color: yellow;
   font-family: Helvetica;
+  overflow: hidden;
+  height: 100vh;
 }
 
 span {
@@ -22,9 +24,9 @@ span {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  bottom: 0px;
-  -webkit-transform: rotateX(45deg);
-          transform: rotateX(45deg);
+  bottom: -10%;
+  -webkit-transform: rotateX(-55deg);
+          transform: rotateX(-55deg);
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
