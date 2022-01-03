@@ -29,4 +29,27 @@ span {
           transform: rotateX(-55deg);
   display: none;
 }
+
+#arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: 50%;
+}
+
+#arrows img {
+  width: 100px;
+  height: 100px;
+  background: #1c1f24;
+  display: none;
+}
+
+#arrows img:first-child {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 /*# sourceMappingURL=style.css.map */
