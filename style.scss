@@ -1,44 +1,45 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png);   
-    color: #fff; 
-    font-size: 80px;
-    color: yellow;
-    font-family: Helvetica;
-    overflow: hidden;
-    height: 100vh;
+  background: #000
+    url(http://www.script-tutorials.com/demos/360/images/stars.png);
+  color: #fff;
+  font-size: 80px;
+  color: yellow;
+  font-family: Helvetica;
+  overflow: hidden;
+  height: 100vh;
 }
 
+span {
+  width: max-content;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: -10%;
+  transform: rotateX(-55deg);
+  display: none;
+  background-position: center;
+}
 
-span{
-    width: max-content;
-    position: absolute;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    bottom: -10%;
-    transform: rotateX(-55deg);
+#arrows {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 50%;
+  img {
+    width: 100px;
+    height: 100px;
+    background: #1c1f24;
     display: none;
-}
-
-#arrows{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: 50%;
-    img{
-        width: 100px;
-        height: 100px;
-        background: #1c1f24;
-        display: none;
-    }
-    img:first-child{
-        transform: rotate(180deg);
-    }
+  }
+  img:first-child {
+    transform: rotate(180deg);
+  }
 }
