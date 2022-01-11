@@ -16,12 +16,19 @@ move = (x) => {
     function measures() {
       bottom += 0.1;
       size -= 0.0007;
+      let opacity = 1;
       if (bottom <= 100) {
         setTimeout(() => {
           measures();
           x.style.bottom = bottom + "%";
           x.style.transform = `scale(${size})`;
           time2 += 0.03;
+
+          if (bottom >= 80) {
+            console.log("blig");
+            opacity -= 0.15;
+            x.style.color = `rgba(0, 0, 0, ${opacity})`;
+          }
         }, time2);
       } else {
         x.style.display = "none";
@@ -45,29 +52,6 @@ spans.forEach((e) => {
 document.body.addEventListener("click", () => {
   img.forEach((e) => {
     e.style.display = "inline-block";
-  });
-});
-img.forEach((e) => {
-  e.addEventListener("click", () => {
-    if (e.id === "left") {
-      document.body.style.transition = "background-position-x 2000ms";
-      document.body.style.backgroundPositionX = "400px";
-
-      spans.forEach((e) => {
-        e.style.left = "100%";
-        e.style.transition = "left 3000ms";
-      });
-    }
-
-    if (e.id === "right") {
-      document.body.style.transition = "background-position-x 2000ms";
-      document.body.style.backgroundPositionX = "-400px";
-
-      spans.forEach((e) => {
-        e.style.right = "100%";
-        e.style.transition = "right 3000ms"; /*špatnej přechod :<*/
-      });
-    }
   });
 });
 

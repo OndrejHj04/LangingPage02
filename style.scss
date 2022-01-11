@@ -9,7 +9,7 @@ body {
     url(http://www.script-tutorials.com/demos/360/images/stars.png);
   color: #fff;
   font-size: 80px;
-  color: yellow;
+
   font-family: Helvetica;
   overflow: hidden;
   height: 100vh;
@@ -26,6 +26,7 @@ span {
   transform: rotateX(-55deg);
   display: none;
   background-position: center;
+  color: yellow;
 }
 
 #arrows {
